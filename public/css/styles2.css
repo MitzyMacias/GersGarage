@@ -1,0 +1,201 @@
+/*
+                        CCT COLLEGE 
+            HIGHER DIPLOMA IN SCIENCE IN COMPUTING
+                DUBLIN, IRELAND, AUGUST 2021
+
+           FINAL PROJECT - GER'S GARAGE
+    WEB PAGE MADE BY STUDENT:   MITZY MACIAS DE LA TORRE
+    STUDENT NUMBER:             2020426 
+    FOR THE SUBJECT:            GUIDED TECHNOLOGY PROJECT
+    PROJECT TITLE:              GER'S GARAGE
+    
+    PAGE:                       styles2.css
+    PURPOSE:                    Page with the styles of the
+                                signup.php webpage.
+                                
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url(../fonts/Karla-Regular.ttf);
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url(../fonts/Cinzel-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.main-title {
+  padding: 0 15px;
+  color: white;
+  display: flex;
+
+  /*justify-content: space-between;*/
+  /*align-items: center;*/
+}
+.colour-span {
+  color: #eead33;
+}
+
+.form-register {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin: auto;
+}
+/*style="border:1px solid #ccc"*/
+
+body {
+  margin: 0;
+  font-family: "Karla";
+  background-image: url(../images/garage8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: whitesmoke;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel";
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #eead33;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container-inputs {
+  padding: 10px;
+  padding-left: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Clear floats */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.areacomments {
+  width: 100%;
+  height: 200px;
+}
+
+#cars {
+  width: 100%;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (min-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+  .container-inputs {
+    padding-left: 10%;
+    padding-right: 10%;
+    /*width: 80%;*/
+  }
+
+  .form-register {
+    /* padding: 0;*/
+    width: 90%;
+  }
+  .signup-box {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 50%;
+  }
+
+  .container-inputs {
+    padding-left: 10%;
+    padding-right: 10%;
+    /*width: 80%;*/
+  }
+
+  .form-register {
+    /* padding: 0;*/
+    width: 60%;
+  }
+  .signup-box {
+    padding: 3px;
+  }
+}
+
+.alert {
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+  background: green;
+  box-shadow: 0px 1px 3px #ccc;
+  margin-bottom: 15px;
+  border-radius: 2px;
+}
+
+.alert-error {
+  background: red;
+}

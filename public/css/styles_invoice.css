@@ -1,0 +1,341 @@
+/*
+                        CCT COLLEGE 
+            HIGHER DIPLOMA IN SCIENCE IN COMPUTING
+                DUBLIN, IRELAND, AUGUST 2021
+
+           FINAL PROJECT - GER'S GARAGE
+    WEB PAGE MADE BY STUDENT:   MITZY MACIAS DE LA TORRE
+    STUDENT NUMBER:             2020426 
+    FOR THE SUBJECT:            GUIDED TECHNOLOGY PROJECT
+    PROJECT TITLE:              GER'S GARAGE
+    
+    PAGE:                       styles_invoice.css
+    PURPOSE:                    Page with the styles of the
+                                invoice section.
+                                
+*/
+
+/* GENERAL STYLES */
+@font-face {
+  font-family: "Karla";
+  src: url(../fonts/Karla-Regular.ttf);
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url(../fonts/Cinzel-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel";
+}
+
+/* header Styles */
+.main-header {
+  padding: 0 15px;
+}
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  background: none;
+}
+
+.main-title {
+  float: left;
+  padding: 0 15px;
+  color: white;
+  display: flex;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+
+  z-index: 999;
+}
+.colour-span a {
+  color: #eead33;
+}
+
+.colour-span {
+  color: #eead33;
+}
+
+/* Styles of Banner */
+.banner {
+  background: url(../images/garage8.jpg);
+  min-height: 500px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.banner:before {
+  content: "";
+  width: 100%;
+  min-height: 500px;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.banner_content {
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 1.3em;
+}
+
+/*  A L L O C A T I N G   P R I C E S  S T Y L E S    */
+.main-serv {
+  position: relative;
+  margin-left: 10%;
+  align-items: center;
+  z-index: 99;
+  width: fit-content;
+}
+
+#logged-user h3 {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  width: fit-content;
+}
+
+.block {
+  top: -400px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.welcome_btn3 {
+  position: relative;
+  border: 2px solid #eead33;
+  width: 200px;
+  /*margin: auto;*/
+  padding: 10px;
+  text-decoration: none;
+  color: #eead33;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 70px;
+  transition: all 0.5s;
+  z-index: 999;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+  .welcome_btn3 {
+    position: relative;
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0px 10px 10px 10px;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main2 {
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+  .main-title {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    min-height: 500px;
+  }
+  .banner:before {
+    min-height: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main2 {
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+  .main-title {
+    font-size: 2.5em;
+  }
+  .menu {
+    font-size: 1em;
+  }
+  .banner {
+    min-height: 500px;
+  }
+  .banner:before {
+    min-height: 500px;
+  }
+  .banner_title,
+  .banner_txt {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  .bannerB_title,
+  .bannerB_txt {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  .main {
+    margin-top: 0px;
+    position: relative;
+  }
+  .container-design {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .design_item {
+    width: 50%;
+  }
+
+  .design_item ul {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1400px;
+  }
+  .banner_title.banner_txt {
+    font-size: 2em;
+  }
+  .banner_title.banner_txt {
+    font-size: 2em;
+  }
+  .bannerB_title.banner_txt {
+    font-size: 2em;
+  }
+  .bannerB_title.banner_txt {
+    font-size: 2em;
+  }
+}
+
+/*============ Invoice ============*/
+
+.customer_info,
+.invoice_data,
+.title_page,
+.data {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#invoice_detail tr {
+  background-color: #fff !important;
+}
+#invoice_detail td {
+  border-bottom: 1px solid #ccc;
+}
+.data {
+  background-color: #fae7c3; /* #e3ecef;*/
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 2px solid #f3d7a2; /* #78909c;*/
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.action_customer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+
+.data label {
+  margin: 5px auto;
+}
+.wd20 {
+  width: 20%;
+}
+.wd25 {
+  width: 25%;
+}
+.wd30 {
+  width: 30%;
+}
+.wd40 {
+  width: 40%;
+}
+.wd60 {
+  width: 60%;
+}
+.wd100 {
+  width: 100%;
+}
+
+#cust_register_div,
+#add_invoice {
+  display: none;
+}
+.displayN {
+  display: none;
+}
+.tbl_invoice {
+  max-width: 900px;
+  margin: auto;
+}
+.tbl_invoice tfoot td {
+  font-weight: bold;
+}
+.textright {
+  text-align: right;
+}
+.textcenter {
+  text-align: center;
+}
+.textleft {
+  text-align: left;
+}
+#btn_deleteinvoice {
+  /*background-color: #f36a6a;*/
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 3px;
+  color: #eead33;
+}

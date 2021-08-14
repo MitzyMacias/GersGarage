@@ -1,0 +1,1870 @@
+/*
+                        CCT COLLEGE 
+            HIGHER DIPLOMA IN SCIENCE IN COMPUTING
+                DUBLIN, IRELAND, AUGUST 2021
+
+           FINAL PROJECT - GER'S GARAGE
+    WEB PAGE MADE BY STUDENT:   MITZY MACIAS DE LA TORRE
+    STUDENT NUMBER:             2020426 
+    FOR THE SUBJECT:            GUIDED TECHNOLOGY PROJECT
+    PROJECT TITLE:              GER'S GARAGE
+    
+    PAGE:                       styles.css
+    PURPOSE:                    Page with the styles of the
+                                webpage.
+                                
+*/
+
+@font-face {
+  font-family: "Karla";
+  src: url(../fonts/Karla-Regular.ttf);
+}
+@font-face {
+  font-family: "Cinzel";
+  src: url(../fonts/Cinzel-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel";
+}
+
+#logged-user h3 {
+  text-align: left;
+  background: rgba(0, 0, 0, 0.4);
+  width: fit-content;
+}
+
+.block {
+  top: -400px;
+  position: relative;
+  margin-left: 30px;
+}
+
+.main-nav {
+  margin-left: 10px;
+}
+
+.main-nav2 {
+  margin-left: 10%;
+  align-items: center;
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  top: -400px;
+}
+
+.main-nav2 h3 {
+  text-align: left;
+  margin-left: 20%;
+}
+
+.main-nav h1,
+h3,
+p {
+  color: white;
+  text-align: center;
+}
+
+.videoframe {
+  position: relative;
+  align-items: center;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 786px) {
+  .video {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .video {
+    width: 360px;
+    height: 215px;
+  }
+}
+
+.signup {
+  color: #eead33;
+}
+
+.main-nav-25a:before {
+  text-align: justify;
+  /*padding: 10px;*/
+  margin-left: 20px;
+  border: 5px double white;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+}
+.main-nav-25a:after {
+  position: relative;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main-nav-25b:before {
+  width: 80%;
+  text-align: justify;
+  /*padding: 10px;*/
+  margin-left: 20px;
+  border: 5px double white;
+  position: relative;
+}
+
+.main-nav-25b:after {
+  position: relative;
+  content: "";
+}
+
+.main-nav-25c:before {
+  width: 80%;
+  text-align: justify;
+  /*padding: 10px;*/
+  margin-left: 20px;
+  border: 5px double white;
+  position: relative;
+}
+.main-nav-25c:after {
+  position: relative;
+  content: "";
+}
+
+.main-nav-25d:before {
+  width: 80%;
+  text-align: justify;
+  /*padding: 10px;*/
+  margin-left: 20px;
+  border: 5px double white;
+  position: relative;
+}
+.main-nav-25d:after {
+  position: relative;
+  content: "";
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  line-height: 25px;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  background: none;
+}
+/* header Styles */
+.main-header {
+  padding: 0 15px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.main-title {
+  float: left;
+  padding: 0 15px;
+  color: white;
+  display: flex;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 0px black, 1px 1px 0px black, 2px 2px 0px black;
+
+  z-index: 999;
+}
+
+.colour-span a {
+  color: #eead33;
+}
+
+/* Styles of Menu */
+.icon-menu {
+  font-size: 1.5em;
+  color: #eead33;
+  border: 1px solid white;
+  display: block;
+  padding: 5px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: #212121;
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  z-index: 999;
+  opacity: 0; /* Menu disappear*/
+  visibility: hidden; /* Menu disappear, with the buttons*/
+  transition: all 0.5s;
+}
+.menu_item {
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.menu_item-btn {
+  /*Login Button*/
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  height: fit-content;
+  position: relative;
+  top: 13px;
+  border-radius: 50%;
+}
+
+.menu_link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.menu_link:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #eead33;
+  border-top: 2px solid #eead33;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.menu_link:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-left: 2px solid #eead33;
+  border-bottom: 2px solid #eead33;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+.menu_link span:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-left: 2px solid #eead33;
+  border-top: 2px solid #eead33;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.menu_link span:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-bottom: 2px solid #eead33;
+  border-right: 2px solid #eead33;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.menu_link span {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+  background: rgba(0, 0, 0, 0.001);
+}
+
+.menu_link-select:before,
+.menu_link-select:after,
+.menu_link-select span:before,
+.menu_link-select span:after {
+  opacity: 1;
+}
+
+.menu_item:hover .menu_link:before,
+.menu_item:hover .menu_link:after,
+.menu_item:hover .menu_link span:before,
+.menu_item:hover .menu_link span:after {
+  opacity: 1;
+}
+
+.nav-social {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-social_item {
+  width: 35px;
+  height: 35px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.nav-social_item:first-child {
+  background: #3b5998;
+}
+
+.nav-social_item:nth-child(2) {
+  background: #1da1f2;
+}
+
+.nav-social_item:nth-child(3) {
+  background: red;
+}
+
+.nav-social_item {
+  color: white;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles of Banner */
+.banner {
+  background: url(../images/garage8.jpg);
+  min-height: 500px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.banner:before {
+  content: "";
+  width: 100%;
+  min-height: 500px;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.banner_content {
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 1.3em;
+}
+
+/*Styles of Main*/
+.main {
+  margin-top: 0px; /*350px;*/
+  margin-bottom: 10px;
+  position: relative;
+  color: rgb(49, 48, 48);
+}
+
+.main2 {
+  margin-top: 0px;
+  position: relative;
+}
+.main2 h1 {
+  text-align: center;
+  color: rgb(49, 48, 48);
+}
+
+.section_title {
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+  color: rgb(49, 48, 48);
+}
+.section_title:before {
+  /*Line over Menu*/
+  content: "";
+  width: 200px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #eead33;
+}
+.welcome {
+  text-align: center;
+  padding: 20px;
+  max-width: 650px;
+  margin: auto;
+  position: relative;
+  color: rgb(49, 48, 48);
+}
+
+.welcome_txt {
+  font-size: 1.2em;
+  color: rgb(49, 48, 48);
+}
+
+.welcome_btn {
+  display: block;
+  border: 2px solid #eead33;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  color: #eead33;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+
+.welcome_btn2 {
+  position: relative;
+  border: 2px solid #eead33;
+  width: 200px;
+  /*margin: auto;*/
+  padding: 10px;
+  text-decoration: none;
+  color: #eead33;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 70px;
+  transition: all 0.5s;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.bookbutton {
+  border: 2px solid #eead33;
+  width: 300px;
+  /*  margin: auto;*/
+  /*  padding: 10px;*/
+  text-decoration: none;
+  color: #eead33;
+  font-size: 1em;
+  font-weight: bold;
+  top: 260px;
+  text-align: center;
+  margin-left: 40%;
+  /*transition: all 0.5s;*/
+  z-index: 999;
+  position: relative;
+}
+
+.welcome_btn:hover {
+  background: #eead33;
+  color: white;
+}
+.container-design {
+  margin: 20px 0;
+  position: relative;
+}
+
+.design_item {
+  position: relative;
+  margin: 0;
+}
+
+.design_item h3 {
+  font-size: 1em;
+}
+
+.design_item ul {
+  position: absolute;
+  font-size: 0.8em;
+  top: 40%;
+  margin-left: 15px;
+  text-align: justify;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.design_item:before {
+  content: "";
+  width: 100%;
+  /*min-height: 400px;*/
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.design_title {
+  position: absolute;
+  /*top: 40%;
+  left: 50%;*/
+
+  top: 15%;
+  left: 50%;
+
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+}
+
+.design_title:before {
+  /* Lines over the titles*/
+  content: "";
+  width: 200px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #eead33;
+}
+
+.design_title:after {
+  /* Lines under the titles*/
+  content: "";
+  width: 200px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #eead33;
+}
+
+.container-testimonials {
+  margin: 60px auto;
+  max-width: 600px;
+}
+
+.testimonials_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.testimonials_txt {
+  text-align: center;
+  padding: 20px;
+  color: #eead33;
+}
+
+.testimonials_name {
+  text-align: center;
+  font-size: 1.4em;
+  color: #eead33;
+  font-weight: bold;
+  /*text-transform: uppercase;*/
+}
+
+/* Styles of Footer*/
+.main-footer {
+  background: #282828;
+  color: #828282;
+  /*padding: 20px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer_title {
+  font-size: 1.5em;
+  color: white;
+}
+
+.column-50 {
+  width: 48%;
+  padding: 10px;
+}
+
+.footer_link {
+  color: #eead33;
+}
+
+.social-icon {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.social-icon i {
+  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.contact-icon {
+  display: flex;
+  align-items: center;
+  font-family: "Karla";
+}
+
+.contact-icon .fas {
+  color: white;
+  display: block;
+  margin-right: 10px;
+}
+
+.contact-icon .far {
+  color: white;
+  display: block;
+  margin-right: 10px;
+}
+
+.social-icon fa-facebook-f {
+  background: #3b5998;
+}
+.social-icon fa-twitter {
+  color: #3bbef5;
+  margin-right: 5px;
+  background: #3bbef5;
+}
+
+.social-icon fa-youtube {
+  background: red;
+}
+
+.social_link {
+  display: block;
+  text-decoration: none;
+  color: #828282;
+}
+
+.copy {
+  background: #211e1e;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (min-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+  .container-inputs {
+    padding-left: 10%;
+    padding-right: 10%;
+    /*width: 80%;*/
+  }
+
+  .form-register {
+    /* padding: 0;*/
+    width: 90%;
+  }
+  .signup-box {
+    padding: 0;
+  }
+}
+
+/* change of styles according to the screen size*/
+@media screen and (min-width: 480px) {
+  .bookbutton {
+    border: 2px solid #eead33;
+    width: 300px;
+    /*  margin: auto;*/
+    /*  padding: 10px;*/
+    text-decoration: none;
+    color: #eead33;
+    font-size: 1.1em;
+    font-weight: bold;
+    top: 350px;
+    text-align: center;
+    margin-left: 30%;
+    /*transition: all 0.5s;*/
+    z-index: 999;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .bookbutton {
+    border: 2px solid #eead33;
+    width: 300px;
+    /*  margin: auto;*/
+    /*  padding: 10px;*/
+    text-decoration: none;
+    color: #eead33;
+    font-size: 1.1em;
+    font-weight: bold;
+    top: 400px;
+    text-align: center;
+    margin-left: 30%;
+    /*transition: all 0.5s;*/
+    z-index: 999;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+
+  .menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    display: flex;
+    background: none;
+    font-size: 0.8em;
+  }
+  .menu_item {
+    width: auto;
+  }
+  .bookbutton {
+    border: 2px solid #eead33;
+    width: 300px;
+    /*  margin: auto;*/
+    /*  padding: 10px;*/
+    text-decoration: none;
+    color: #eead33;
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 500px;
+    text-align: center;
+    margin-left: 40%;
+    /*transition: all 0.5s;*/
+    z-index: 999;
+    position: relative;
+  }
+
+  .design_title {
+    position: absolute;
+    /*top: 40%;
+    left: 50%;*/
+
+    top: 15%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+  .banner {
+    min-height: 500px;
+  }
+  .banner:before {
+    min-height: 500px;
+  }
+  .bannerB {
+    min-height: 500px;
+  }
+  .bannerB:before {
+    min-height: 500px;
+  }
+  .main {
+    margin-top: 0px;
+    position: relative;
+    color: rgb(49, 48, 48);
+  }
+
+  .modal {
+    width: 100%;
+    margin: auto;
+  }
+  .modal-content {
+    width: 100%;
+    margin: auto;
+  }
+  .container2 {
+    padding: 0;
+  }
+
+  .section_title {
+    font-size: 2em;
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+  .welcome_txt {
+    color: rgba(78, 58, 58, 0.658);
+  }
+
+  main2 {
+    margin-top: 0px;
+    position: relative;
+  }
+  /*
+    .design_item{
+        width: 50%;
+    }
+    .column-50{
+        width: 50%;
+        padding-left: 100px;
+    }*/
+}
+
+@media screen and (min-width: 1024px) {
+  main2 {
+    margin-top: 0px;
+    position: relative;
+  }
+
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+  .main-title {
+    font-size: 2.5em;
+  }
+  .menu {
+    font-size: 1em;
+  }
+  .banner {
+    min-height: 500px;
+  }
+  .banner:before {
+    min-height: 500px;
+  }
+  .bannerB {
+    min-height: 500px;
+  }
+  .bannerB:before {
+    min-height: 500px;
+  }
+  .banner_title,
+  .banner_txt {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  .bannerB_title,
+  .bannerB_txt {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  .main {
+    margin-top: 0px;
+    position: relative;
+  }
+  .container-design {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .design_item {
+    width: 50%;
+  }
+
+  .design_item ul {
+    font-size: 1em;
+  }
+
+  .bookbutton {
+    border: 2px solid #eead33;
+    width: 400px;
+    /*  margin: auto;*/
+    /*  padding: 10px;*/
+    text-decoration: none;
+    color: #eead33;
+    font-size: 1.2em;
+    font-weight: bold;
+    top: 88%;
+    text-align: center;
+    margin-left: 40%;
+    /*transition: all 0.5s;*/
+    /*z-index: 999;*/
+    position: relative;
+  }
+
+  .column-50 {
+    width: 50%;
+    padding-left: 100px;
+  }
+
+  .main-nav-25a {
+    width: 20%;
+    text-align: justify;
+    /*padding: 10px;*/
+    margin-left: 10px;
+    border: 5px double white;
+    position: absolute;
+    z-index: 999;
+  }
+
+  .main-nav-25b {
+    width: 20%;
+    text-align: justify;
+    margin-left: 280px;
+    border: 5px double white;
+    position: relative;
+    z-index: 999;
+  }
+
+  .main-nav-25c {
+    width: 20%;
+    text-align: justify;
+    margin-left: 550px;
+    border: 5px double white;
+    position: relative;
+    z-index: 999;
+  }
+
+  .main-nav-25d {
+    width: 20%;
+    text-align: justify;
+    margin-left: 800px;
+    border: 5px double white;
+    position: relative;
+    z-index: 999;
+  }
+
+  .cont-text {
+    text-align: justify;
+    justify-content: space-between;
+  }
+  .cont-text2 ul {
+    list-style: none;
+    margin-left: 10px;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1200px;
+  }
+  .design_title {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1400px;
+  }
+  .banner_title.banner_txt {
+    font-size: 2em;
+  }
+  .banner_title.banner_txt {
+    font-size: 2em;
+  }
+  .bannerB_title.banner_txt {
+    font-size: 2em;
+  }
+  .bannerB_title.banner_txt {
+    font-size: 2em;
+  }
+}
+
+/* - - - - - Styles for login form - - - - - */
+
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+button {
+  background-color: #cc5709;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: 100%; /*auto*/
+  padding: 10px 18px;
+  background-color: rgba(82, 4, 4, 0.74);
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  align-items: center;
+}
+.imgcontainer img {
+  text-align: center;
+  display: block;
+}
+
+img.avatar {
+  /*width: 40%;*/
+  width: 100px;
+  /*border-radius: 50%;*/
+  padding-left: 15px;
+}
+
+.container2 {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  z-index: 999;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #e7e6e6;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  /*width: 80%;*/ /* Could be more or less, depending on screen size */
+  width: 40%;
+  align-items: center;
+  align-content: center;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: rgba(133, 5, 5, 0.658);
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+  z-index: 999;
+}
+
+/* Modal Content/Box */
+.modal2-content {
+  background-color: #e7e6e6;
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 1px solid #888;
+  /*width: 80%;*/ /* Could be more or less, depending on screen size */
+  width: 40%;
+  align-items: center;
+  align-content: center;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* - - - - From the About Us Page - - - -*/
+
+.cont-box {
+  color: white;
+  /*display: flex;*/
+  padding: 0 15px;
+
+  /*padding-left: 15px;  */
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  position: relative;
+  top: -250px;
+  /*margin: auto;*/
+}
+.cont-text {
+  margin: 10px;
+  text-align: justify;
+  justify-content: space-between;
+}
+.cont-text2 ul {
+  margin: 10px;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.cont-text2 ul li::before {
+  content: "\2022";
+  color: #eead33;
+  font-size: 20px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* BOOKING STYLES*/
+
+.app-title h1 {
+  color: white;
+  z-index: 999;
+}
+
+.block {
+  z-index: 999;
+}
+
+/* * *   Admin Page Styles  * * */
+
+.box-nav {
+  position: relative;
+  margin-top: 25px;
+}
+
+.table2 {
+  position: relative;
+  /*top: -200px;*/
+  /*border-style: double;*/
+  margin-top: -300px;
+  margin-bottom: 100px;
+  z-index: 99;
+  overflow: scroll;
+}
+
+.container-table {
+  position: relative; /*the item position according to the container*/
+  width: 90%;
+  background: white;
+  margin: 50px auto;
+  box-shadow: 0 0 20px #333;
+
+  display: grid;
+  /*grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  */
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: 50px;
+}
+
+.table_title {
+  grid-column-start: 1;
+  grid-column-end: 10;
+
+  background: #eead33;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3em;
+  position: relative;
+}
+
+.table_header,
+.table_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table_header {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table_item {
+  padding: 10px;
+  font-size: 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* *  ADMIN PAGE: FIRST MENU BUTTONS */
+.firstmenu {
+  position: relative;
+  top: 50px;
+  width: fit-content;
+  display: block;
+}
+
+.welcome_adm {
+  border: 2px solid #eead33;
+  width: 200px;
+  /*margin: auto;*/
+  padding: 5px;
+  text-decoration: none;
+  color: #eead33;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.2em;
+  font-weight: bold;
+  /*margin-top: 20px;*/
+  margin-left: 15%;
+  transition: all 0.5s;
+  z-index: 999;
+  cursor: pointer;
+  /*position: relative;*/
+}
+
+/* ADMING PAGE: PRINTING SECTION*/
+.print_buttons {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: fit-content;
+  align-items: center;
+  padding: 5px;
+  /*margin: 10px;*/
+  border: #eead33;
+  border-style: double;
+  display: block;
+}
+
+.print_buttons h3 {
+  position: relative;
+  margin-left: 40%;
+  margin-top: 0;
+  margin-bottom: 0px;
+}
+
+.print_buttons .welcome_btn2 {
+  position: relative;
+  border: 2px solid #eead33;
+  width: 200px;
+  /*margin: auto;*/
+  padding: 5px;
+  text-decoration: none;
+  color: #eead33;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 15%;
+  transition: all 0.5s;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.form-fromto {
+  position: relative;
+  align-items: center;
+  padding: 20px;
+  margin-left: 15%;
+}
+
+.form-fromto label {
+  color: #eead33;
+  font-size: 1.3em;
+  width: 20%;
+}
+
+.table2 label {
+  color: #eead33;
+  font-size: 1.3em;
+  width: 20%;
+  width: fit-content;
+}
+
+/*
+  Insert Form
+*/
+
+.container-add {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.container_title {
+  margin: 0;
+  padding: 10px;
+  background: rgba(120, 65, 40, 1);
+  color: white;
+  font-size: 1.9em;
+  text-align: center;
+}
+
+.container_form {
+  background: white;
+  box-shadow: 0 0 20px #333;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_label {
+  font-size: 1.3em;
+  width: 20%;
+}
+
+.container_input {
+  width: 25%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.container_submit {
+  background: rgba(120, 65, 40, 1);
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 15px auto;
+  width: 100px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+/* Edition */
+
+.title_edit {
+  position: absolute;
+  right: 7%;
+  color: white;
+  text-decoration: none;
+  font-size: 0.7em;
+}
+
+.title_edit:hover {
+  text-decoration: underline;
+}
+
+.container-table-edit {
+  grid-template-columns: repeat(10, 1fr);
+  width: 95%;
+  min-width: 900px;
+  grid-auto-rows: 30px;
+}
+
+.table_title-edit {
+  grid-column-start: 1;
+  grid-column-end: 11; /*10 columnas, 11 lineas*/
+}
+
+.table_input {
+  display: block;
+  padding-left: 10px;
+}
+
+.container_submit-update {
+  background: rgba(40, 65, 120, 1);
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+.tableb {
+  /*border-style: double;*/
+  align-items: center;
+  position: relative;
+  text-align: center;
+  overflow: scroll;
+}
+
+table {
+  /*border-style: double;*/
+  background-color: white;
+  position: relative;
+  text-align: center;
+  font-size: 1em;
+}
+thead {
+  border-style: double;
+  background: #eead33;
+  font-size: 1em;
+}
+
+/* RESPONSIVE TABLE DEMO*/
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+  thead {
+    display: none;
+  }
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+  tr td:first-child {
+    background: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
+}
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin: 0 0 1rem 0;
+  }
+
+  tr:nth-child(odd) {
+    background: #ccc;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+		Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+  td:nth-of-type(1):before {
+    content: "ID BOOKING";
+  }
+  td:nth-of-type(2):before {
+    content: "Name";
+  }
+  td:nth-of-type(3):before {
+    content: "License Plate";
+  }
+  td:nth-of-type(4):before {
+    content: "Make";
+  }
+  td:nth-of-type(5):before {
+    content: "Vehicle Type";
+  }
+  td:nth-of-type(6):before {
+    content: "Engine Type";
+  }
+  td:nth-of-type(7):before {
+    content: "Vehicle Year";
+  }
+  td:nth-of-type(8):before {
+    content: "Colour";
+  }
+  td:nth-of-type(9):before {
+    content: "Mileage";
+  }
+  td:nth-of-type(10):before {
+    content: "Service Type";
+  }
+  td:nth-of-type(11):before {
+    content: "Admission Date";
+  }
+  td:nth-of-type(12):before {
+    content: "Admission Time";
+  }
+  td:nth-of-type(13):before {
+    content: "Comments";
+  }
+  td:nth-of-type(14):before {
+    content: "Mechanic";
+  }
+  td:nth-of-type(15):before {
+    content: "Status";
+  }
+  td:nth-of-type(16):before {
+    content: "Action";
+  }
+
+  /* TABLE PART LIST*/
+  .table3 td:nth-of-type(1):before {
+    content: "ID PART";
+  }
+  .table3 td:nth-of-type(2):before {
+    content: "Concept";
+  }
+  .table3 td:nth-of-type(3):before {
+    content: "Price";
+  }
+  .table3 td:nth-of-type(4):before {
+    content: "Quantity";
+  }
+  .table3 td:nth-of-type(5):before {
+    content: "Action";
+  }
+}
+
+/*   * * * *   Styles UpdateBooking.php * * * * */
+
+/* Styles of Banner */
+.bannerB {
+  background: url(../images/garage8.jpg);
+  min-height: 500px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.bannerB:before {
+  content: "";
+  width: 100%;
+  min-height: 500px;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bannerB_content {
+  width: 100%;
+  padding: 15px;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 1.3em;
+}
+
+.box-nav-update {
+  position: relative; /*absolute;*/
+  margin-top: 200px;
+}
+
+.thetitleb {
+  position: absolute;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  top: 120px;
+  left: 25%;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,
+.signupbtn {
+  float: center; /*left;*/
+  width: 100%;
+}
+
+/*  A L L O C A T I N G   P R I C E S  S T Y L E S    */
+.main-serv {
+  position: relative;
+  margin-left: 10%;
+  align-items: center;
+  /*background: rgba(0, 0, 0, 0.4);*/
+  /*top: -400px;*/
+  /*margin-top: -400px;*/
+  z-index: 99;
+  width: fit-content;
+}
+
+/* * * * LIST OF VEHICLES PARTS * * * */
+.table3 a {
+  text-decoration: underline;
+}
+.link_edit {
+  color: rgb(199, 123, 61);
+}
+
+.link_delete {
+  color: rgb(248, 82, 6);
+}
+
+.table3 {
+  position: relative;
+  /*top: -200px;*/
+  /*border-style: double;*/
+  margin-top: -300px;
+  margin-bottom: 100px;
+  z-index: 99;
+  overflow: scroll;
+  padding: 5px;
+  width: fit-content;
+}
+
+.table3 td {
+  font-size: smaller;
+}
+
+.welcome_btn3 {
+  position: relative;
+  border: 2px solid #eead33;
+  width: 200px;
+  /*margin: auto;*/
+  padding: 10px;
+  text-decoration: none;
+  color: #eead33;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 70px;
+  transition: all 0.5s;
+  z-index: 999;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1050px) {
+  .welcome_btn3 {
+    position: relative;
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0px 10px 10px 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .table3 td {
+    padding: 10px;
+  }
+  .table3 tr {
+    padding: 8px;
+  }
+  .table3 th {
+    padding: 10px;
+  }
+}
+
+.partframe {
+  position: relative;
+  margin-top: -280px;
+  margin-left: 5px;
+  display: block;
+  background-color: white;
+}
+
+.alert {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.alert alert-error {
+  color: crimson;
+}
+
+.alert alert-success {
+  color: #eead33;
+}
+
+.alert-error {
+  color: crimson;
+}
+
+/* delete_confirm_part PAGE STYLES*/
+.data_delete {
+  color: black;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.cancelbtn2 {
+  position: relative;
+  width: 200px; /*auto*/
+  margin: 10px 0px;
+  padding: 20px; /*15px 23px;*/
+  background-color: rgba(82, 4, 4, 0.74);
+
+  text-align: center;
+  border-style: thin;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.signupbtn2 {
+  position: relative;
+  width: 200px;
+  margin: 10px 0px;
+  padding: 20px; /*15px 23px;*/
+  background-color: rgba(252, 185, 2, 0.74);
+
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.data_delete {
+  position: relative;
+  margin-top: -310px;
+  border: black;
+  border-style: double;
+  padding: 20px;
+  background-color: white;
+}
+
+.data_delete h2 {
+  color: #eead33;
+  text-align: center;
+  font-size: 14pt;
+}
+
+.data_delete p {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  display: block;
+  align-items: center;
+}
+
+.data_delete span {
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  color: #7c7c7c;
+}
+
+.btnform {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  display: float;
+  margin: auto;
+  padding: 15px 0px;
+  align-items: baseline;
+}
+
+/*  PAGER */
+
+.thepager ul {
+  padding: 15px;
+  list-style: none;
+  background: #fff;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.thepager a,
+.pageSelected {
+  color: rgb(248, 82, 6);
+  border: 1px solid #ddd;
+  padding: 5px;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  width: 35px;
+}
+
+.thepager a:hover {
+  background: #ddd;
+}
+
+.pageSelected {
+  color: white;
+  background: #eead33;
+  border: 1px solid #eead33;
+}
